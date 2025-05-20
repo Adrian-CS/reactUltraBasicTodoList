@@ -34,9 +34,9 @@ export default function App() {
       return currentTodos.filter(todo => todo.id !== id)
     })
   }
-  return <><NewTodoForm onSubmit={addTodo}></NewTodoForm>
+  return <div className="app-container"><NewTodoForm onSubmit={addTodo}></NewTodoForm>
 <h1 className="header">Todo List</h1>
 <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}></TodoList>
-</>
+</div>
   
 }
